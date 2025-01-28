@@ -33,13 +33,7 @@ go mod tidy
 go run main.go
 ```
 The server will start in http://localhost:8081/     
-## **API Endpoints**
-### **1. Send a Receipt for Processing**
-This process send the receipt and return generated unique id.
-**Endpoint**
-```
-POST /receipts/process
-```
+
 ## **Testing**
 
 ### **1. Run unit tests**
@@ -51,7 +45,10 @@ go test ./tests/...
 ### **2. Test APIs with cURL**
 
 ### ***1. Send a Receipt for Processing***
-
+```
+POST /receipts/process
+```
+This process send the receipt and return generated unique id.
 ```
 curl -X POST "http://localhost:8081/receipts/process" \
      -H "Content-Type: application/json" \
@@ -88,7 +85,10 @@ curl -X POST "http://localhost:8081/receipts/process" \
 ```
 
 ### _3. Get reward points for the receipt_
-
+```
+GET /receipts/{id}/points
+```
+This endpoint returns the calculated reward points for a populated receipt.
 ```
 curl -X GET "http://localhost:8081/receipts/<RECEIPT_ID>/points"
 ```
