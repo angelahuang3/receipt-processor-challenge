@@ -7,6 +7,11 @@ This project implements a **receipt processing API** that:
 3. Built with **Go (Golang) and Gin framework**  
 4. Includes **unit tests** for API validation  
 
+## **Tech Stack**
+1. Language: Go
+2. Framework: Gin
+3. Storage: In-memory Database
+4. Test Suite: Go built-in testing package
 ## **Installation**
 
 ### **1. Clone the repository**
@@ -27,6 +32,7 @@ go mod tidy
 ```sh
 go run main.go
 ```
+The server will start in http://localhost:8081/     
 
 ## **Testing**
 
@@ -38,7 +44,7 @@ go test ./tests/...
 
 ### **2. Test APIs with cURL**
 
-### _1. Send a Receipt for Processing_
+### ***1. Send a Receipt for Processing***
 
 ```
 curl -X POST "http://localhost:8081/receipts/process" \
