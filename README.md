@@ -45,7 +45,7 @@ go test ./tests/...
 ### **2. Test APIs with cURL**
 
 ### ***1. Send a Receipt for Processing***
-This process send the receipt and return generated unique id.
+This process send the receipt and return generated unique id. <br/>
 a. Endpoint:
 ```
 POST /receipts/process
