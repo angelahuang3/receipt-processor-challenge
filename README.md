@@ -46,6 +46,7 @@ go test ./tests/...
 
 ### ***1. Send a Receipt for Processing***
 This process send the receipt and return generated unique id. <br/>
+
 a. Endpoint:
 ```
 POST /receipts/process
@@ -88,7 +89,8 @@ curl -X POST "http://localhost:8081/receipts/process" \
 ```
 
 ### _3. Get reward points for the receipt_
-This endpoint returns the calculated reward points for a populated receipt.
+This endpoint returns the calculated reward points for a populated receipt. <br/>
+
 a. Endpoint:
 ```
 GET /receipts/{id}/points
