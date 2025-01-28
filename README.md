@@ -1,11 +1,11 @@
 # **Receipt Processor Challenge**
 
 ## **Overview**
-This project implements a **receipt processing API** that:
-1. Accepts **receipt data in JSON format** via REST API  
-2. **Calculates reward points** based on predefined business rules  
-3. Built with **Go (Golang) and Gin framework**  
-4. Includes **unit tests** for API validation  
+This project implements a receipt processing API that:
+1. Accepts receipt data in JSON format via REST API  
+2. **Calculates reward points based on predefined business rules  
+3. Built with Go (Golang) and Gin framework 
+4. Includes unit tests for API validation  
 
 ## **Tech Stack**
 1. Language: Go
