@@ -33,7 +33,13 @@ go mod tidy
 go run main.go
 ```
 The server will start in http://localhost:8081/     
-
+## **API Endpoints**
+### **1. Send a Receipt for Processing**
+This process send the receipt and return generated unique id.
+**Endpoint**
+```
+POST /receipts/process
+```
 ## **Testing**
 
 ### **1. Run unit tests**
