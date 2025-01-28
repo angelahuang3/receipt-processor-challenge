@@ -34,7 +34,7 @@ go run main.go
 ```
 The server will start in http://localhost:8081/     
 
-## **Testing**
+## **API Endpoints & Testing**
 
 ### **1. Run unit tests**
 
@@ -45,10 +45,13 @@ go test ./tests/...
 ### **2. Test APIs with cURL**
 
 ### ***1. Send a Receipt for Processing***
+This process send the receipt and return generated unique id.
+a. Endpoint:
 ```
 POST /receipts/process
 ```
-This process send the receipt and return generated unique id.
+b. Example:
+
 ```
 curl -X POST "http://localhost:8081/receipts/process" \
      -H "Content-Type: application/json" \
@@ -85,16 +88,17 @@ curl -X POST "http://localhost:8081/receipts/process" \
 ```
 
 ### _3. Get reward points for the receipt_
+This endpoint returns the calculated reward points for a populated receipt.
+a. Endpoint:
 ```
 GET /receipts/{id}/points
 ```
-This endpoint returns the calculated reward points for a populated receipt.
+b. Example:
 ```
 curl -X GET "http://localhost:8081/receipts/<RECEIPT_ID>/points"
 ```
 
 ### Expected result
-
 ```
 {"points":109,"receipt_id":"generated-uuid"}
 ```
