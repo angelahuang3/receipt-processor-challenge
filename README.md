@@ -27,7 +27,7 @@ cd receipt-processor-challenge
 go mod tidy
 ```
 
-### **2. Run the server**
+### **3. Run the server**
 
 ```sh
 go run main.go
